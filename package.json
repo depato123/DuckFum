@@ -1,0 +1,19 @@
+{
+  "name": "duckfum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depato123/DuckFum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/depato123/DuckFum/issues"
+  },
+  "homepage": "https://github.com/depato123/DuckFum#readme"
+}

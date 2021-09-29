@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: #f7f3eb;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    color: white;    
+}
+
+nav{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    
+.content__header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    color: grey;
+    margin: 1% 0% 0% 0%;
+
+}
+
+/* contenido */
+.imagen__contenido{
+    background-color: #acd8d7;
+    width: 55%;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+}
+
+.imagen__contenido img{
+    width: 20%;
+    height: 20%;
+}
+
+.texto__contenido{
+    text-align: center;
+    margin-top: 3%;
+}
+
+button{
+    margin-top: 7%;
+    background-color: black;
+    color: white;
+    border-radius: 35%;
+    padding: 7px 7px;
+    margin-bottom: 7%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.descripcion__detalle{
+    width: 55%;
+    margin: auto;
+    background:#fff;
+    border: solid 1px;
+    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+    margin-bottom: 25px;
+}
+
+.descripcion__detalle .descipcion__contenido{
+    margin: 15px;
+}
+
+.imagen__pagos {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 55%;
+    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+    margin-bottom: 25px;
+}
+
+
+/* .login__register-box {
+    align-items: center;
+    height: 250px;
+    background: #acd8d7;
+    width: 55%;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+}
+
+.login__register-box label{
+    margin-top: 15px;
+}
+
+.login__register-box .botones{
+    margin: 15px;
+    text-align: center;
+} */
+
+footer{
+    background-color: #acd8d7;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 400px){
+    .imagen__contenido {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen__contenido img {
+        width: 50%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .imagen__pagos {
+        margin-bottom: 20px;
+    }
+}
