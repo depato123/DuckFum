@@ -23,7 +23,40 @@ nav{
     align-items: center;
     justify-content: space-evenly;
 }
-    
+
+nav .menu i{
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .menu i:hover{
+    color: rgb(31, 74, 168);
+}
+
+nav .menu ul{
+    display: flex;
+    align-items: center;
+}
+
+
+nav .menu ul .barra__de__busqueda input {
+    height: 32px;
+    position: relative;
+    color: grey;
+    border-radius: 15px;
+}
+
+.barra__de__busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav .menu ul .barra__de__busqueda > i{
+    position: absolute;
+}
+
 .content__header{
     display: flex;
     justify-content: center;
@@ -38,7 +71,6 @@ hr {
 }
 
 button {
-    margin-top: 2.5%;
     background-color: black;
     color: white;
     border-radius: 35%;
@@ -51,18 +83,40 @@ button {
 
 
 /* Contenido */
-.contenido__carrito{
+.contenido__register{
     background: #acd8d7;
     margin: auto;
     width: 55%;
+    text-align: center;
+    margin-top: 10%;
+    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
 }
+
+.contenido__register h1{
+    margin: 25px;
+}
+
+.contenido__register h2{
+    margin: 20px;
+}
+
+.contenido__register p{
+    margin: 15px;
+}
+
+.contenido__register span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 
 /*  */
 footer{
     background-color: #acd8d7;
     position: absolute;
-    width: 100%;
     bottom: 0;
+    width: 100%;
 }
 
 footer p{
@@ -71,6 +125,12 @@ footer p{
 }
 
 @media screen and (max-width: 400px){
+
+    nav{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        flex-direction: column;
+    }
 
     button {
         margin-top: 5px;
@@ -85,9 +145,11 @@ footer p{
     }
 
     body > div > label > input[type=text]:nth-child(8){
-
         margin-bottom: 15px;
+    }
 
-
+    footer{
+        margin-top: 50px;
+        position: inherit;
     }
 }

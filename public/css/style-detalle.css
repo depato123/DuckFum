@@ -23,7 +23,40 @@ nav{
     align-items: center;
     justify-content: space-evenly;
 }
-    
+
+nav .menu i{
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .menu i:hover{
+    color: rgb(31, 74, 168);
+}
+
+nav .menu ul{
+    display: flex;
+    align-items: center;
+}
+
+
+nav .menu ul .barra__de__busqueda input {
+    height: 32px;
+    position: relative;
+    color: grey;
+    border-radius: 15px;
+}
+
+.barra__de__busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav .menu ul .barra__de__busqueda > i{
+    position: absolute;
+}
+
 .content__header{
     display: flex;
     justify-content: center;
@@ -37,7 +70,21 @@ hr {
 
 }
 
-/* contenido */
+button {
+    margin-top: 2.5%;
+    background-color: black;
+    color: white;
+    border-radius: 35%;
+    padding: 7px 7px;
+    margin-bottom: 2.5%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+/* Contenido */
+
 .imagen__contenido{
     background-color: #acd8d7;
     width: 55%;
@@ -123,6 +170,13 @@ footer p{
 }
 
 @media screen and (max-width: 400px){
+
+    nav{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        flex-direction: column;
+    }
+
     .imagen__contenido {
         flex-direction: column;
         justify-content: center;

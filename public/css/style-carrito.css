@@ -23,7 +23,40 @@ nav{
     align-items: center;
     justify-content: space-evenly;
 }
-    
+
+nav .menu i{
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .menu i:hover{
+    color: rgb(31, 74, 168);
+}
+
+nav .menu ul{
+    display: flex;
+    align-items: center;
+}
+
+
+nav .menu ul .barra__de__busqueda input {
+    height: 32px;
+    position: relative;
+    color: grey;
+    border-radius: 15px;
+}
+
+.barra__de__busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav .menu ul .barra__de__busqueda > i{
+    position: absolute;
+}
+
 .content__header{
     display: flex;
     justify-content: center;
@@ -50,7 +83,9 @@ button {
 
 
 
+
 /* Contenido */
+
 
 .contenido__carrito {
     text-align: center;
@@ -75,6 +110,11 @@ button {
     width: 25%;
 }
 
+.contenido__carrito .contenido__articulo p {
+    width: 75%;
+    margin: auto;
+}
+
 /*  */
 footer{
     background-color: #acd8d7;
@@ -88,9 +128,19 @@ footer p{
 
 @media screen and (max-width: 400px){
 
+    nav{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        flex-direction: column;
+    }
+
     button {
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    .contenido__carrito .contenido__articulo {
+        flex-direction: column;
     }
 
     .botones{
@@ -103,7 +153,6 @@ footer p{
     body > div > label > input[type=text]:nth-child(8){
 
         margin-bottom: 15px;
-
-
     }
+
 }
