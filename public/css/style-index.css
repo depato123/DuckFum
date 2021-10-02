@@ -7,13 +7,20 @@
 }
 
 body{
-    background: #f7f3eb;
+    background: white;
+ /*   background: #f7f3eb; */
     font-family: 'Noto Sans', sans-serif;
 }
 
 header{
     color: white;    
 }
+
+.logo {
+    width: 35%;
+}
+
+
 
 nav{
     margin-top: 1%;
@@ -31,7 +38,7 @@ nav .menu i{
 }
 
 nav .menu i:hover{
-    color: rgb(31, 74, 168);
+    color: rgb(26, 29, 192);
 }
 
 nav .menu ul{
@@ -71,6 +78,23 @@ hr {
 }
 
 
+button {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px;
+    width: 67%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+/* acá termina el nav */
+
+
 .content__header .texto__content {
     width: 100%;
     margin-top: 1%;
@@ -80,6 +104,10 @@ hr {
     text-align: center;
 }
 
+.separador__contenidos {
+    background: #f5f5f5;
+    padding: 15px 0;
+}
 
 
 .content__header .texto__content h3{
@@ -107,7 +135,7 @@ img{
     display: inline-block;
     text-align: center;
     width: 95%;
-    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+    box-shadow: 0 0 10px rgb(6 6 6 / 10%);
 }
 
 
@@ -119,6 +147,29 @@ img{
     transform: translate(-50%, -50%);
 }
 
+
+.row__imagenes{
+    width: 100%;
+}
+
+.row__imagenes .boss_img{
+    width: 96.7%;
+}
+
+.row__imagenes-divisor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 73%;
+    margin: auto;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.imagenes_divisor-row{    
+
+}
+
+
 .texto__productos{
     margin-top: 3%;
     margin-bottom: 3%;
@@ -129,7 +180,7 @@ img{
 .contenedor__productos {
     width: 75%;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -138,12 +189,12 @@ img{
 }
 
 .imagen__producto {
-    background: #070c1b;
-    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(6 6 6 / 10%);
     margin-right: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
-    color: white;
+    color: #000;
 }
 
 .imagen__producto img{
@@ -156,32 +207,103 @@ img{
 }
 
 .imagen__producto h3{
-    color: red;
+    color: rgb(15, 27, 92);
     text-decoration: white;
     margin-top:2%;
 }
 
-.imagen__producto button{
-    background-color: white;
-    color: black;
-    border-radius: 35%;
-    padding: 15px 15px;
-    margin-bottom: 7%;
+
+
+.imagen__producto.imagen_centro {
+    width: 30vw;
+}
+
+.ubi__contenedor{
+    background: #f7f5f0;
+    margin-top: 50px;
+}
+
+.informacion__texto{
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.ubi__informacion-box{
+    width: 72%;
+    margin: auto;
+    text-align: center;
+}
+
+.ubi__informacion{
+    display: flex;
+    align-items: center;
+}
+
+.ubi__informacion img{
+    width: 50%;
+}
+
+.div__fondo-blanco{
+    background: white;
+    width: 100%;
+}
+
+.iconos__fondo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 30px;
+    background: #fff;
+    width: 85%;
+    margin: auto;
+    border-top: 1px solid #e6e6e8;
+}
+
+.iconos__fondo-box {
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 16%;
+    text-align: center;
+}
+
+.iconos__fondo-texto {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000!important;
+    margin-top: 5px;
+    line-height: 1.5;
+    max-width: 125px;
 }
 
 @media screen and (max-width: 400px){
+    /* nav */
     nav{
         margin-top: 4%;
         margin-bottom: 4%;
         flex-direction: column;
     }
 
+    nav a {
+        width: 50%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
     nav h1{
         font-size: 200%;
     }
 
+    /* contenido */
+
     .contenido__pag .promos{
         grid-template-columns: 1fr 1fr;
+        width: 85%;
     }
 
     #izquierda__imagen{
@@ -191,9 +313,15 @@ img{
         margin-right: 0;
     }
 
+
+    .row__imagenes-divisor {
+        width: 85%;
+    }
+
     .texto__productos{
         font-size: 75%;
     }
+
 
     #noSeVe{
         display: none;
@@ -201,11 +329,31 @@ img{
 
     .contenedor__productos{
         grid-template-columns: 1fr 1fr;
+        width: 85%;
     }
 
     .imagen__producto img{
         width: 80%;
         height: 80%;
+    }
+
+    .imagen__producto.imagen_centro {
+        width: auto;
+    }
+
+    .ubi__informacion {
+        flex-direction: column;
+    }
+
+    .iconos__fondo {
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        padding-top: 30px;
+    }
+
+    .iconos__fondo-box {
+        width: 70%;
+        margin: auto;
     }
 }
 

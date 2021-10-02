@@ -7,13 +7,34 @@
 }
 
 body{
-    background: #f7f3eb;
+    background: white;
+ /*   background: #f7f3eb; */
     font-family: 'Noto Sans', sans-serif;
 }
 
 header{
     color: white;    
 }
+
+.logo {
+    width: 35%;
+}
+
+button {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px;
+    width: 67%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+
 
 nav{
     margin-top: 1%;
@@ -31,7 +52,7 @@ nav .menu i{
 }
 
 nav .menu i:hover{
-    color: rgb(31, 74, 168);
+    color: rgb(26, 29, 192);
 }
 
 nav .menu ul{
@@ -70,17 +91,6 @@ hr {
 
 }
 
-button {
-    margin-top: 2.5%;
-    background-color: black;
-    color: white;
-    border-radius: 35%;
-    padding: 7px 7px;
-    margin-bottom: 2.5%;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
 
 
 
@@ -88,15 +98,15 @@ button {
 
 
 .contenido__carrito {
-    text-align: center;
-    background: #acd8d7;
-    margin: 5% auto;
+    background: #f5f5f5;
+    margin: auto;
     width: 55%;
+    text-align: center;
     box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
 }
 
 .contenido__carrito h3{
-    color: red;
+    color: rgb(36, 66, 196);
 }
 
 .contenido__carrito .contenido__articulo {
@@ -117,7 +127,7 @@ button {
 
 /*  */
 footer{
-    background-color: #acd8d7;
+    background-color: #000000;
     width: 100%;
 }
 
@@ -128,11 +138,27 @@ footer p{
 
 @media screen and (max-width: 400px){
 
+    /* nav */
     nav{
         margin-top: 4%;
         margin-bottom: 4%;
         flex-direction: column;
     }
+
+    nav a {
+        width: 50%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    nav h1{
+        font-size: 200%;
+    }
+
+    /* contenido */
 
     button {
         margin-top: 5px;
@@ -144,8 +170,7 @@ footer p{
     }
 
     .botones{
-        width: 50%;
-        display: flex;
+        align-items: center;
         flex-direction: column;
         margin: auto;
     }
