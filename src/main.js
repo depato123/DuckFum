@@ -3,19 +3,21 @@ app = express()
 path = require("path")
 
 
+/* Seteamos EJS como motor de templates */
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+
 app.use(express.static(__dirname.replace('src','public')))
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'))
-})
+//Routers
+indexRouter = require('./routes/indexRouter')
+loginRouter = require('./routes/loginRouter')
 
+app.use("/",indexRouter)
+app.use("/login",loginRouter)
 
 app.get("/registro", (req, res) => {
     res.sendFile(path.join(__dirname, './views/registro.html'))
-})
-
-app.get("/login", (req, res) => {
-    res.sendFile(path.join(__dirname, './views/login.html'))
 })
 
 app.get("/detalle", (req, res) => {

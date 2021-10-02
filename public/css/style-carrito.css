@@ -113,6 +113,8 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10px;
+    border: 1px #bfbfbf solid;
 }
 
 .contenido__carrito .contenido__articulo img{
