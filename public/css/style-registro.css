@@ -64,17 +64,6 @@ button:hover {
 
 
 /*  */
-footer{
-    background-color: #000000;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p{
-    text-align: center;
-    color: white;
-}
 
 @media screen and (max-width: 400px){
 
@@ -98,8 +87,4 @@ footer p{
         margin-bottom: 15px;
     }
 
-    footer{
-        margin-top: 50px;
-        position: inherit;
-    }
 }

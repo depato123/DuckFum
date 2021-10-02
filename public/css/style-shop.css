@@ -65,3 +65,18 @@ button:hover {
     max-height: 250px;
 }
 
+
+@media screen and (max-width: 400px){
+    /* media query */
+    .box__contendor{
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8";
+    }
+}
