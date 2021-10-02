@@ -34,63 +34,11 @@ button {
     color: white;
 }
 
-
-
-nav{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+button:hover {
+    color: #02081a;
+    background: #d1d1d1;
+    font-size: 120%;
 }
-
-nav .menu i{
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-nav .menu i:hover{
-    color: rgb(26, 29, 192);
-}
-
-nav .menu ul{
-    display: flex;
-    align-items: center;
-}
-
-
-nav .menu ul .barra__de__busqueda input {
-    height: 32px;
-    position: relative;
-    color: grey;
-    border-radius: 15px;
-}
-
-.barra__de__busqueda{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-nav .menu ul .barra__de__busqueda > i{
-    position: absolute;
-}
-
-.content__header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-hr {
-    color: grey;
-    margin: 1% 0% 0% 0%;
-
-}
-
 
 
 
@@ -117,9 +65,29 @@ hr {
     border: 1px #bfbfbf solid;
 }
 
+.cantidad__carrito{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    background: white;
+    border: #000000 0.5px solid;
+}
+
+.cantidad__carrito button {
+    margin-bottom: 0px;
+    border: #000000 0.5px solid;
+}
+
+.cantidad__carrito button:hover {
+    background: #000;
+    color: #fff;
+    font-size: 150%;
+}
+
 .contenido__carrito .contenido__articulo img{
     margin: 3% 5% 1% 5%;
-    width: 25%;
+    max-width: 250px;
 }
 
 .contenido__carrito .contenido__articulo p {
@@ -141,24 +109,6 @@ footer p{
 @media screen and (max-width: 400px){
 
     /* nav */
-    nav{
-        margin-top: 4%;
-        margin-bottom: 4%;
-        flex-direction: column;
-    }
-
-    nav a {
-        width: 50%;
-        margin: auto;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    nav h1{
-        font-size: 200%;
-    }
 
     /* contenido */
 

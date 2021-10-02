@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
 body{
     background: white;
  /*   background: #f7f3eb; */
@@ -78,18 +73,27 @@ hr {
 }
 
 
-button {
-    margin-bottom: 15px;
-    background: rgb(0, 0, 0);
-    border: 0px;
-    padding: 0px;
-    width: 67%;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    transition: .3s ease-in-out;
-    overflow: hidden;
-    color: white;
-}
 
-/* acá termina el nav */
+/* media query */
+
+@media screen and (max-width: 400px){
+    /* nav */
+    nav{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 50%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    nav h1{
+        font-size: 200%;
+    }
+}

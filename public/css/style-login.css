@@ -15,6 +15,26 @@ header{
     color: white;    
 }
 
+button {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px;
+    width: 67%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+button:hover {
+    color: #02081a;
+    background: #d1d1d1;
+    font-size: 120%;
+}
+
 /* Contenido */
 
 
@@ -56,24 +76,6 @@ footer p{
 @media screen and (max-width: 400px){
 
     /* nav */
-    nav{
-        margin-top: 4%;
-        margin-bottom: 4%;
-        flex-direction: column;
-    }
-
-    nav a {
-        width: 50%;
-        margin: auto;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    nav h1{
-        font-size: 200%;
-    }
 
     /* contenido */
 
