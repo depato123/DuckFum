@@ -1,3 +1,5 @@
+const { application } = require("express")
+
 express = require("express")
 app = express()
 path = require("path")
@@ -12,25 +14,17 @@ app.use(express.static(__dirname.replace('src','public')))
 //Routers
 indexRouter = require('./routes/indexRouter')
 loginRouter = require('./routes/loginRouter')
+registroRouter = require('./routes/registroRouter')
+detalleRouter = require('./routes/detalleRouter')
+carritoRouter = require('./routes/carritoRouter')
+shopRouter = require('./routes/shopRouter')
 
 app.use("/",indexRouter)
 app.use("/login",loginRouter)
-
-app.get("/registro", (req, res) => {
-    res.sendFile(path.join(__dirname, './views/registro.html'))
-})
-
-app.get("/detalle", (req, res) => {
-    res.sendFile(path.join(__dirname, './views/detalle.html'))
-})
-
-app.get("/carrito", (req, res) => {
-    res.sendFile(path.join(__dirname, './views/carrito.html'))
-})
-
-app.get("/shop", (req, res) => {
-    res.sendFile(path.join(__dirname, './views/shop.html'))
-})
+app.use("/registro", registroRouter)
+app.use('/detalle', detalleRouter)
+app.use('/carrito', carritoRouter)
+app.use('/shop', shopRouter)
 
 
 app.listen(3000, () => {

@@ -1,5 +1,6 @@
 module.exports = {
-    loginView : (req, res) =>{
-        res.sendFile(path.join(__dirname, '../views/login.html'))
+    loginView: (req, res) => {
+        /* res.sendFile(path.join(__dirname, '../views/login.html')) */
+        res.render('login')
     }
 }
