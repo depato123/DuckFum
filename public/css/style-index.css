@@ -106,9 +106,6 @@ img{
     width: 100%;
 }
 
-.row__imagenes .boss_img{
-    width: 96.7%;
-}
 
 .row__imagenes-divisor {
     display: grid;
@@ -120,7 +117,9 @@ img{
 }
 
 .imagenes_divisor-row{    
-
+    display: flex;
+    flex-direction: column;
+    width: 104%;
 }
 
 
@@ -156,7 +155,6 @@ img{
 
 .div__contenedor-productos {
     width: 100%;
-    padding-top: 50px; 
     padding-bottom: 50px; 
     background: #f5f5f5;
 }
