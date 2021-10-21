@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-.movil{
-    display: none;
-}
-
 body{
     background: #f1f1f1;
     height: 100vh;
@@ -45,12 +41,17 @@ body{
     flex-direction: column;
 }
 
+body > section:nth-child(3) > div > form:nth-child(4) > input[type=file]{
+    margin-top: 5px;
+    width: 57%;
+}
+
 #GET-descripcion{
     height: 200px;
 }
 
 .botones{
-    width: 70%;
+    width: 55%;
 
     margin: auto;
     margin-top: 35px;
@@ -86,12 +87,20 @@ button:hover {
 
 @media screen and (max-width: 400px){
 
-    .escritorio{
-        display: none;
+    .logo__div{
+        width: 60%;
     }
 
-    .movil{
-        display: block;
+    .div__articulo{
+        width: 100%;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
