@@ -1,6 +1,6 @@
 module.exports = {
-    adminView: (req, res) => {
+    createView: (req, res) => {
         /* res.sendFile(path.join(__dirname, '../views/carrito.html')) */
-        res.render('admin')
+        res.render('create')
     }
 }

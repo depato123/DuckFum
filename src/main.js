@@ -19,6 +19,7 @@ detalleRouter = require('./routes/detalleRouter')
 carritoRouter = require('./routes/carritoRouter')
 shopRouter = require('./routes/shopRouter')
 adminRouter = require('./routes/adminRouter')
+createRouter = require('./routes/createRouter')
 
 app.use("/",indexRouter)
 app.use("/login",loginRouter)
@@ -27,6 +28,8 @@ app.use('/detalle', detalleRouter)
 app.use('/carrito', carritoRouter)
 app.use('/shop', shopRouter)
 app.use('/admin', adminRouter)
+app.use('/admin/create', createRouter)
+
 
 
 app.listen(3000, () => {
